@@ -12,3 +12,5 @@ https://ozqr20.github.io/run-buddy/
 
 ## Contribution
 Made with ❤️ by Ozqr
+
+### ©️2019 Run Buddy, Inc
