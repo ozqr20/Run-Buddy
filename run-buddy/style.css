@@ -11,10 +11,13 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-
+/* Using flexbox in header  */
 header {
     padding: 20px 35px;
     background-color: #39a6b2;
+    display: flex;
+    justify-content: space-between; /*It determines the unused space by adding up the border-width, margin, padding, and content of each child element*/
+    flex-wrap: wrap;  /*instruct the container to let child elements break onto the next line when when they don't fit on one line*/
 }
 
 header h1 {
@@ -30,7 +33,6 @@ header a {
 }
 
 header nav {
-    float: right;
     /* It moves the nav to the right side using float*/
     margin: 7px 0;
 }
@@ -44,14 +46,6 @@ header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
     font-size: 22px;
-}
-
-header h1 {
-    font-weight: bold;
-    font-size: 36px;
-    color: #fce138;
-    margin: 0;
-    display: inline;
 }
 
 
