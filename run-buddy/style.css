@@ -89,7 +89,6 @@ section {
     padding: 60px;
 }
 
-
 .hero {
     /* . will indicate we're using class as css selector */
     background-image: url("../run-buddy/assets/images/hero-bg.jpg");
@@ -97,6 +96,24 @@ section {
     background-size: cover;
     background-position: center;
     position: relative;
+}
+
+.building-habits h2{
+    font-size: 60px;
+    color: #fce138;
+    text-align: right;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.building-habits p {
+    color: white;
+    text-align: right;
+}
+
+.building-habits {
+    
+    width: 500px;
+    position: absolute;
 }
 
 .hero-form {
@@ -170,6 +187,7 @@ section {
 .steps div {
     margin-bottom: 80px;
 }
+
 
 .steps img {
     width: 15%;
