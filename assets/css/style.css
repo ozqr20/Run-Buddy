@@ -77,7 +77,7 @@ section {
 
 .hero {
     /* . will indicate we're using class as css selector */
-    background-image: url("./assets/images/hero-bg.jpg");
+    background-image: url("../run-buddy/assets/images/hero-bg.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -155,47 +155,25 @@ section {
     text-align: center;
 }
 
+.step-img {
+    width: 100%;
+}
 
 .steps {
     background: #fce138;
 }
 
-/*The value we provided to the step's flexbox children uses the <flex-grow value> <flex-basis value> syntax, meaning that .step h3 will be at least 30% wide and will 
-receive any extra space in the container. Also, .step-info will be at least 70% wide but will receive any extra space in the container at a 2-to-1 ratio. 
-In other words, it will receive two more units of unused space than a sibling with a flex-grow value of 1.*/
-
 .step h3 {
     color: #024e76;
     font-size: 46px;
-    flex: 1 30%;
 }
 
-/*----------------------------------------------------------------------------------------*/
-.step-img {
-    flex: 1 12%;
-    margin-right: 20px;
-}
-.step-img img {
-    width: 100%;
-}
-
-.step-text{
-    flex: 12;
-}
-
-.step-info {
-    flex: 2 70%; /*flex: <flex-grow value> <flex-shrink value> <flex-basis value> */
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.step-next p {
+.step-text p {
     color: #39a6b2;
     font-size: 18px;
 }
 
-.step-next h4 {
+.step-text h4 {
     font-size: 26px;
     line-height: 1.5;
     color: #024e76;
@@ -221,7 +199,6 @@ In other words, it will receive two more units of unused space than a sibling wi
     margin: 0 auto 35px auto;
     width: 50%;
 }
-
 
 
 .primary-border {
@@ -342,6 +319,5 @@ footer p {
 
 .flex-row {
     display: flex;
-    flex-direction: column; /* by default is row */
 }
 
