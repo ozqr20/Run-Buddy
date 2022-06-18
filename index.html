@@ -9,44 +9,50 @@
 
 <body>
     <header>
-        <h1>
-            <a>RUN BUDDY</a>
-        </h1>
+            <h1>
+                <a>RUN BUDDY</a>
+            </h1>
 
-        <nav> 
-            <ul>  <!-- List item element-->
-                <li>  <!-- Anchor element -->
-                    <a href="#what-we-do"> What We Do</a>
-                </li>
-                <li>
-                    <a href="#what-you-do">What You Do</a>
-                </li>
-                <li>
-                    <a href="#your-trainers">Your Trainers</a>
-                </li>
-                <li>
-                    <a href="#reach-out">Reach Out</a>
-                </li>
-            </ul>
-        </nav>
+            <nav> 
+                <ul>  <!-- List item element-->
+                    <li>  <!-- Anchor element -->
+                        <a href="#what-we-do"> What We Do</a>
+                    </li>
+                    <li>
+                        <a href="#what-you-do">What You Do</a>
+                    </li>
+                    <li>
+                        <a href="#your-trainers">Your Trainers</a>
+                    </li>
+                    <li>
+                        <a href="#reach-out">Reach Out</a>
+                    </li>
+                </ul>
+            </nav>
     </header>
 
     <!-- hero/jumbotron huge banner top page-->
-
+<div class="flex-row">
     <section class="hero">
         <div class="building-habits">
             <h2>Start Building<br>Habits.</h2><br>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, eum accusamus a perferendis natus nesciunt suscipit, corporis id itaque labore et tempora libero dolor ut hic unde delectus autem sit?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, eum accusamus a perferendis natus nesciunt suscipit, corporis id itaque labore et tempora libero dolor ut hic unde delectus autem sit?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe temporibus blanditiis ab sint officiis, odit autem laboriosam reiciendis qui. Saepe praesentium eum debitis, quasi similique sequi nisi beatae alias velit.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic veniam dolorem commodi debitis ipsa dicta veritatis delectus dolorum fuga, aut accusantium ut facilis repellendus, similique numquam magni sint corporis qui.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. At consequuntur dolores ab neque quo quod sit aliquid temporibus vitae enim. Cupiditate quisquam quia assumenda officiis repudiandae dolore deserunt tempore nulla!
+                </p>
 
         </div>
+
+        <!-- HERO FORM -->
+
         <div class="hero-form">
-            <!-- Identifier "class= ... " for css file -->
             <h3>Get Started Today</h3>
             <p>Fill out this form and one of our trainers will schedule a consult</p>
 
             <form>
                 <!-- Add form element which interacts with the user to sign up -->
-                <label for="name">Enter full name:</label>
+                <label for="name">Your Name:</label>
                 <!--programmatically links to the id attribute in the <input> element.-->
                 <input type="text" placeholder="Your name" name="name" id="name" class="form-input" />
 
@@ -58,7 +64,7 @@
 
                 <!-- Buttom section & fill forms -->
                 <p>
-                    Have you worked out with a traienr before?
+                    Have you worked out with a trainer before?
                     <input type="radio" name="trainer-confirm" id="trainer-yes" />
                     <label for="trainer-yes">Yes</label>
                     <input type="radio" name="trainer-confirm" id="trainer-no" />
@@ -66,10 +72,10 @@
                 </p>
 
                 <p>
+                    <input type="checkbox" name="age-confirm" id="checkbox" />
                     <label for="checkbox">
                         I acknowledge that I am at least 18 years of age.
                     </label>
-                    <input type="checkbox" name="age-confirm" id="checkbox" />
                 </p>
                 <button type="submit">
                     Get running!
@@ -77,6 +83,7 @@
             </form>
         </div>
     </section>
+</div>
 
     <section id="what-we-do" class="intro">
 
