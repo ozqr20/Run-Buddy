@@ -46,7 +46,7 @@ header nav ul {
 
 /* Select every single element and add these styles as well*/
 header nav ul li a {
-    margin: 0 30px;
+    padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;  /* vw means voewport width - it shrinks or increase by 1.55% of the window's overall width*/
 }
@@ -83,6 +83,7 @@ section {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
  /* call to action class CTA*/
  .hero-cta {
@@ -91,7 +92,7 @@ section {
     margin: 3.5%;
     color: #fff;
     font-size: 18px;
-    line-height: 1.3;
+    line-height: 1.2;  /*It makes text easier to read */
  }
 
 .hero-cta h2 {
@@ -213,7 +214,7 @@ In other words, it will receive two more units of unused space than a sibling wi
   }
 
 .section-title {
-    font-size: 55px;
+    font-size: 48px;  /*Big enough for all screens*/
     color: #024e76;
     border-bottom: 3px solid;
     padding-bottom: 20px;
@@ -358,16 +359,23 @@ footer p {
     font-size: 16px;
 }
 
-.text-left {
-    text-align: left;
-}
-
-.text-right {
-    text-align: right;
-}
-
 .flex-row {
     display: flex;
     flex-direction: column; /* by default is row */
 }
 
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+
+
+  }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+
+  }
