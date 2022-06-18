@@ -38,7 +38,6 @@ header h1 {
 header a {
     text-decoration: none;
     color: #fce138;
-
 }
 
 header nav {
@@ -55,11 +54,14 @@ header nav ul {
 }
 
 /* Select every single element and add these styles as well*/
-header nav ul li a {
+header nav ul li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
     margin: 0 30px;
     font-weight: lighter;
     font-size: 1.55vw;  /* vw means voewport width - it shrinks or increase by 1.55% of the window's overall width*/
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-shadow: none;
 }
 
 
@@ -141,6 +143,7 @@ section {
 
 
 .form-input {
+    background-color: rgba(255,255,255, 0.75);
     border: 1px solid #024e76;
     display: block;
     padding: 7px 15px;
@@ -151,14 +154,18 @@ section {
     border-radius: 10px;
 }
 
+.form-input:focus {
+    background-color: rgba(255, 255, 255, 1);
+    outline: none;
+}
 
 .hero-form label {
     margin: 0 5px;
 }
 
-.hero-form button {
+.hero-form button:hover {
     color: #fce138;
-    background-color: #024e76;
+    background-color: #39a6b2;
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 10px; 
@@ -224,12 +231,16 @@ In other words, it will receive two more units of unused space than a sibling wi
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
-    border-bottom: 1px solid #39a6b2;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid #39a6b2;
   }
+
+.steps:last-child {
+    border-bottom: none;
+}
 
 .section-title {
     font-size: 55px;
@@ -335,19 +346,24 @@ In other words, it will receive two more units of unused space than a sibling wi
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
+    background-color: rgba(255,255,255, 0.75);
 }
+.contact-form input:focus, .contact-form textarea:focus {
+    background-color: rgba(255,255,255, 1);  /*It creates a whiter bg for the user to type */
+    outline: none;
+}
+
 .contact-form button{
     width: 100%;
     border: none;
     background: #fce138;
-    color: #024e76;
+    color: #39a6b2;
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
     border-radius: 10px;
 
 }
-
 
 footer {
     background: #fce138;
