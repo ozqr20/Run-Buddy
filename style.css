@@ -13,10 +13,18 @@ body {
 /* Using flexbox in header  */
 header {
     padding: 20px 35px;
+    background-image: url("./assets/images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
     background-color: #39a6b2;
+    background-attachment: fixed;
+    background-position: 80%;
     display: flex;
     justify-content: space-between; /*It determines the unused space by adding up the border-width, margin, padding, and content of each child element*/
     flex-wrap: wrap;  /*instruct the container to let child elements break onto the next line when when they don't fit on one line*/
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 header h1 {
@@ -24,11 +32,13 @@ header h1 {
     font-size: 36px;
     color: #fce138;
     margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
     text-decoration: none;
     color: #fce138;
+
 }
 
 header nav {
@@ -49,6 +59,7 @@ header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
     font-size: 1.55vw;  /* vw means voewport width - it shrinks or increase by 1.55% of the window's overall width*/
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -82,6 +93,8 @@ section {
     background-image: url("./assets/images/hero-bg.jpg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -101,18 +114,20 @@ section {
     font-style: italic;
     font-size: 55px;
     color: #fce138;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
 }
 .hero-form {
     border: solid 3px #024e76;
         /* style, width & color*/
-    background-color: #fce138;
-    border-radius: 20px;
+    background-color: rgba(252, 225, 56, 0.8); /*Adds transparency to the hero box by looking at HEX to RGB converters, last item is the opacity element*/
+    border-radius: 15px;
     padding: 20px;
     color: #024e76;
     width: 40%;
     margin: 3.5%;
     opacity: 0.7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero-form h3 {
@@ -133,6 +148,7 @@ section {
     color: #024e76;
     width: 100%;
     margin-bottom: 15px;
+    border-radius: 10px;
 }
 
 
@@ -143,11 +159,9 @@ section {
 .hero-form button {
     color: #fce138;
     background-color: #024e76;
-    border: none;
     padding: 10px 20px;
     font-size: 16px;
-    border-radius: 20px;
-    opacity: 1;
+    border-radius: 10px; 
 }
 
 .intro p {
@@ -297,6 +311,7 @@ In other words, it will receive two more units of unused space than a sibling wi
     line-height: 1.5;
     font-size: 16px;
     font-style: normal;
+    border-radius: 10px;
 }
 .contact-info a {
     color: #fce138;
@@ -329,6 +344,7 @@ In other words, it will receive two more units of unused space than a sibling wi
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
+    border-radius: 10px;
 
 }
 
@@ -361,14 +377,6 @@ footer a {
 
 footer p {
     font-size: 16px;
-}
-
-.text-left {
-    text-align: left;
-}
-
-.text-right {
-    text-align: right;
 }
 
 .flex-row {
