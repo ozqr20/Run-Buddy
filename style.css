@@ -60,6 +60,14 @@ header nav ul {
     list-style: none;
 }
 
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
 /* Select every single element and add these styles as well*/
 header nav ul li a:hover {
     background: var(--primary-color);
