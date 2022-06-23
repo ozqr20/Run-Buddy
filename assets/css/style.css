@@ -429,6 +429,11 @@
       border-radius: 10px;
   
   }
+
+  .contact-form button:hover {
+    color: var(--primary-color);
+    background: var(--tertiary-color);
+}
   
   footer {
       background: var(--primary-color);
