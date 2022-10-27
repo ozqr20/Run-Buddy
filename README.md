@@ -8,7 +8,7 @@ A website that offers fitness training services.
 * CSS
 
 ## Website
-https://ozqr20.github.io/run-buddy/
+https://ozqr20.github.io/Run-Buddy/
 
 ## Contribution
 Made with ❤️ by Ozqr
